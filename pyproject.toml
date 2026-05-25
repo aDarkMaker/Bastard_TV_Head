@@ -1,0 +1,34 @@
+[project]
+name = "bastard-tv-head"
+version = "0.1.0"
+description = "Bastard TV Head: real-time audio capture → emotion + mouth analysis → dynamic pixel TV face"
+requires-python = ">=3.10"
+dependencies = [
+    "pyaudio>=0.2.11",
+    "numpy>=1.24.0",
+    "pygame>=2.5.0",
+    "speechbrain>=1.0.0",
+    "torch>=2.0.0",
+    "soundfile>=0.12.0",
+]
+
+[project.scripts]
+bastard-tv = "app.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.uv]
+package = true
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.10"
+typeCheckingMode = "basic"
+reportMissingImports = true
+reportMissingModuleSource = false

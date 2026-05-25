@@ -1,5 +1,24 @@
 {
     "words": [
-        "ipixel"
+        "blit",
+        "calib",
+        "coeff",
+        "frombuffer",
+        "hparams",
+        "IEMOCAP",
+        "ipixel",
+        "pyaudio",
+        "pycache",
+        "pyproject",
+        "pytest",
+        "savedir",
+        "venv",
+        "viseme"
+    ],
+    "ignorePaths": [
+        "ha-ipixel-color/**",
+        "pyproject.toml",
+        "README.md",
+        "uv.lock"
     ]
 }
